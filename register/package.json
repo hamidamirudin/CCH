@@ -1,0 +1,10 @@
+{
+  "name": "figmaexport-dashboard_ccha-page_1-cc_ha_register",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "parcel-bundler": "^1.6.1"
+  },
+  "scripts": {},
+  "devDependencies": {}
+}
