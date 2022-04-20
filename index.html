@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Login 10</title>
+  	<link rel="icon" href="images/img.png">
+  	<title>Login CC HA!</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -26,17 +27,17 @@
 		      	<h3 class="mb-4 text-center">Login to Dashboard CC HA!</h3>
 		      	<form action="dahsboard.html" class="signin-form">
 		      		<div class="form-group">
-		      			<input type="text" class="form-control" placeholder="Username" required>
+		      			<input type="text" class="form-control" placeholder="Username" required="" oninvalid="this.setCustomValidity('Username Belum Terisi')" oninput="setCustomValidity('')">
 		      		</div>
 	            <div class="form-group">
-	              <input id="password-field" type="password" class="form-control" placeholder="Password" required>
-	              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+	              <input id="password-field" type="password" class="form-control" placeholder="Password" required="" oninvalid="this.setCustomValidity('Password Belum Terisi')" oninput="setCustomValidity('')">
+	              <span toggle="#password-field" class="fa fa-fw fa-eye-slash field-icon toggle-password"></span>
 	            </div>
 	            <div class="form-group">
-	            	<button  class="form-control btn btn-primary submit px-3">Login</button>
+	            	<button  class="form-control" style="color: #ffffff;background-color: #ffffff;border-color: #ffffff"><font color="blue">LOGIN</font></button>
 	            </div>
 	            <p class="w-100 text-center">Forgot password? </p>
-	            <p class="w-100 text-center">Jika belum memiliki Akun, Silahkan Daftar disini</p>
+	            <p class="w-100 text-center">Jika belum memiliki Akun, Silahkan Daftar  <a href="register.html"><u><b> disini</b></u></a></p>
 	          </form>	
 	          
 	          

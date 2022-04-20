@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>SB Admin 2 - Dashboard</title>
+    <link rel="icon" href="images/img.png">
+    <title>Dashboard CC HA!</title>
 
     <!-- Custom fonts for this <template></template>plate-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -73,7 +73,19 @@
 .highcharts-data-table tr:hover {
     background: #f1f7ff;
 }
-
+/*.dataTables_filter {
+   display: none;
+}*/
+.dataTables_wrapper   .dataTables_filter{
+       float: left
+   }
+ 
+.dataTables_wrapper  .dataTables_length{
+       float: right
+   }
+div.dt-buttons {
+    float: right;
+}
     </style>
 
 </head>
@@ -89,7 +101,7 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
+                <div class="sidebar-brand-icon">
                     <img src="img/logokita.png">
                 </div>
             </a>
@@ -106,7 +118,7 @@
             <li class="nav-item active">
                 <a class="nav-link" href="index.html">
                     <img src="img/file-list-3-line.png">
-                    <span><font color="blue">Tidak Selesai</font></span></a>
+                    <span><font color="blue">Semua Selesai</font></span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="index.html">
@@ -192,14 +204,17 @@
                             </div>
                         </div>
                     </form>
-                    <a href='#myModal' data-toggle='modal' class="btn btn-primary btn-icon-split">
+                    
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <li style="padding-top:16px">
+                            <a href='#myModal' data-toggle='modal' class="btn btn-primary btn-icon-split">
                                         <span class="icon text-white-50">
                                             <i class="fas fa-plus"></i>
                                         </span>
                                         <span class="text">Complaint</span>
                                     </a>
-                    <!-- Topbar Navbar -->
-                    <ul class="navbar-nav ml-auto">
+                        </li>
 
                         <!-- Nav Item - Search Dropdown (Visible Only XS) -->
                         <li class="nav-item dropdown no-arrow d-sm-none">
@@ -416,7 +431,7 @@
                                     
                                 </div>
                                 <!-- Card Body -->
-                                <div class="card-body" style="height: 400px">
+                                <div class="card-body" style="height: 400px;overflow-y: scroll;">
                                     <div class="form-group row">
        <div class="table-responsive">
                                 <table class="table table-bordered" id="example" width="100%" cellspacing="0">
@@ -737,6 +752,8 @@
         "lengthChange": false,
         "ordering": false,
         "info":     false,
+         "paging":   false,
+          "dom": '<"pull-left"f><"pull-right"l>tip',
          dom: 'Bfrtip',
         buttons: [
             {
