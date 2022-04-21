@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="images/img.png">
+    <link rel="icon" href="images/48.png">
     <title>Dashboard CC HA!</title>
 
     <!-- Custom fonts for this <template></template>plate-->
@@ -25,6 +25,9 @@
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <link rel="stylesheet" href="datepicker/css/bootstrap-datepicker3.css"/>
+
+
 
     <style>
         .highcharts-figure,
@@ -198,7 +201,7 @@ div.dt-buttons {
                             <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
                                 aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
+                                <button class="btn btn-primary" type="button" style="background-color: #003AD2;">
                                     <i class="fas fa-search fa-sm"></i>
                                 </button>
                             </div>
@@ -208,9 +211,9 @@ div.dt-buttons {
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <li style="padding-top:16px">
-                            <a href='#myModal' data-toggle='modal' class="btn btn-primary btn-icon-split">
-                                        <span class="icon text-white-50">
-                                            <i class="fas fa-plus"></i>
+                            <a href='#myModal' data-toggle='modal' class="btn btn-primary btn-icon-split" style="background-color: #003AD2;">
+                                        <span class="icon text-white-50" style="background-color: #003AD2;">
+                                            <i class="fas fa-plus" style="color: white;"></i>
                                         </span>
                                         <span class="text">Complaint</span>
                                     </a>
@@ -347,10 +350,12 @@ div.dt-buttons {
                                             <div class="text-xs font-weight-bold text-uppercase mb-1">
                                                 <font size="1">Semua Complaint</font></div>
                                             <div class="h5 mb-0 font-weight-bold ">56</div>
+                                            <div class="text-xs font-weight-bold  text-uppercase mb-1">
+                                                <font size="1">Tiket Complaint</font></div>
                                         </div>
 
                                         <div class="col-auto">
-                                            <i class="fas fa-reply-all fa-2x "></i>
+                                            <img src="images/user.png">
                                         </div>
                                     </div>
                                 </div>
@@ -364,11 +369,13 @@ div.dt-buttons {
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold  text-uppercase mb-1">
-                                                <font size="1">Complaint Selesai</font></div>
+                                                <font size="2">Complaint Selesai</font></div>
                                             <div class="h5 mb-0 font-weight-bold ">24</div>
+                                            <div class="text-xs font-weight-bold  text-uppercase mb-1">
+                                                <font size="1">Tiket Complaint</font></div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-file-alt fa-2x "></i>
+                                            <img src="images/honour.png">
                                         </div>
                                     </div>
                                 </div>
@@ -386,12 +393,15 @@ div.dt-buttons {
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
                                                     <div class="h5 mb-0 mr-3 font-weight-bold ">12</div>
+                                                    <div class="text-xs font-weight-bold  text-uppercase mb-1">
+                                                <font size="1">Tiket Complaint</font></div>
                                                 </div>
+
                                                 
                                             </div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-check-circle fa-2x "></i>
+                                            <img src="images/circle.png">
                                         </div>
                                     </div>
                                 </div>
@@ -407,9 +417,11 @@ div.dt-buttons {
                                             <div class="text-xs font-weight-bold  text-uppercase mb-1">
                                                 <font size="1">Complaint Tidak Selesai </font></div>
                                             <div class="h5 mb-0 font-weight-bold ">3</div>
+                                            <div class="text-xs font-weight-bold  text-uppercase mb-1">
+                                                <font size="1">Tiket Complaint</font></div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-comments fa-2x "></i>
+                                            <img src="images/list.png">
                                         </div>
                                     </div>
                                 </div>
@@ -432,16 +444,17 @@ div.dt-buttons {
                                 </div>
                                 <!-- Card Body -->
                                 <div class="card-body" style="height: 400px;overflow-y: scroll;">
+                                    
                                     <div class="form-group row">
        <div class="table-responsive">
                                 <table class="table table-bordered" id="example" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>No.Tiket</th>
-                                            <th>Customer</th>
-                                            <th>Complaint Priorty</th>
-                                            <th>Tanggal Complaint</th>
-                                            <th>About</th>
+                                            <th style="vertical-align:middle;">No.Tiket</th>
+                                            <th style="vertical-align:middle;">Customer</th>
+                                            <th style="text-align:center;">Complaint Priorty</th>
+                                            <th style="text-align:center;">Tanggal Complaint</th>
+                                            <th style="vertical-align:middle;">About</th>
                                         </tr>
                                     </thead>
                                     
@@ -449,21 +462,35 @@ div.dt-buttons {
                                         <tr>
                                             <td>S000083</td>
                                             <td>Rizal Anandi</td>
-                                            <td style="vertical-align: middle;"><div class="card bg-gradient-danger text-white"><center>Low</center></div></td>
+                                            <td style="vertical-align: middle;"><div class="card bg-gradient-danger text-white"><center>High</center></div></td>
                                             <td>22/08/2022</td>
                                             <td>Pulsa</td>
                                         </tr>
                                         <tr>
                                             <td>S000083</td>
                                             <td>Rizal Anandi</td>
-                                            <td style="vertical-align: middle;"><div class="card bg-gradient-danger text-white"><center>Low</center></div></td>
+                                            <td style="vertical-align: middle;"><div class="card bg-gradient-danger text-white"><center>High</center></div></td>
                                             <td>22/08/2022</td>
                                             <td>Pulsa</td>
                                         </tr>
                                         <tr>
                                             <td>S000083</td>
                                             <td>Rizal Anandi</td>
-                                            <td style="vertical-align: middle;"><div class="card bg-gradient-danger text-white"><center>Low</center></div></td>
+                                            <td style="vertical-align: middle;"><div class="card bg-gradient-danger text-white"><center>High</center></div></td>
+                                            <td>22/08/2022</td>
+                                            <td>Pulsa</td>
+                                        </tr>
+                                        <tr>
+                                            <td>S000083</td>
+                                            <td>Rizal Anandi</td>
+                                            <td style="vertical-align: middle;"><div class="card bg-gradient-danger text-white"><center>High</center></div></td>
+                                            <td>22/08/2022</td>
+                                            <td>Pulsa</td>
+                                        </tr>
+                                        <tr>
+                                            <td>S000083</td>
+                                            <td>Rizal Anandi</td>
+                                            <td style="vertical-align: middle;"><div class="card bg-gradient-danger text-white"><center>High</center></div></td>
                                             <td>22/08/2022</td>
                                             <td>Pulsa</td>
                                         </tr>
@@ -589,8 +616,29 @@ div.dt-buttons {
                                     <h6 class="m-0 font-weight-bold text-primary">Realtime Complaint</h6>
                                 </div>
                                 <div class="card-body">
-                                
-                                    <div id="container"></div>
+                                    <!-- <a href="#" onClick='tampilinrek1()'>hide</a> -->
+                                      <nav class="navbar navbar-expand navbar-light bg-light mb-4">
+                                        <ul class="navbar-nav ml-auto">
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    Periode
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right animated--grow-in"
+                                                    aria-labelledby="navbarDropdown">
+                                                    <a class="dropdown-item" href="#" onClick='tampilinrek1()'>Monthly</a>
+                                                    <a class="dropdown-item" href="#" onClick='tampilinrek2()'>Weekly</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    <div id="container">
+                                        
+                                    </div>
+                                    <div id="container1" style="display: none;">
+                                        dasdasdsa
+                                    </div>
     
 
                                 </div>
@@ -612,7 +660,7 @@ div.dt-buttons {
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Gatot Kaca 2021</span>
+                        <span>Copyright &copy; Gatot Kaca 2022</span>
                     </div>
                 </div>
             </footer>
@@ -635,12 +683,11 @@ div.dt-buttons {
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Apakah Anda Yakin?</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
                     <a class="btn btn-primary" href="index.html">Logout</a>
@@ -684,7 +731,8 @@ div.dt-buttons {
                     <div class="col">
                         <label for="recipient-name" class="col-form-label">Tanggal Komplain</label>
                          <div class="input-group">
-                                        <input type="text" class="form-control" id="recipient-name" >
+                                        <input type="text" name="tanggal" class="form-control" id="tanggal" readonly="readonly" />
+                                        <!-- <input type="text" name="tanggal" class="tanggal" value = '' readonly="readonly" /> -->
                                         <div class="input-group-append">
                                             <button class="btn btn-primary" type="button">
                                                 <i class="fas fa-calendar fa-sm"></i>
@@ -698,7 +746,8 @@ div.dt-buttons {
                         <!-- <input type="text" class="form-control" id="recipient-name" placeholder="Email costumer"> -->
                         <select class="form-control">
                             <option>Pilih Kendala</option>
-                            <option></option>
+                            <option>Gangguan Sistem</option>
+                            <option>Gagal Entri</option>
                         </select>
                     </div>
                 </div>
@@ -710,7 +759,7 @@ div.dt-buttons {
                 </div>
                 <div class="row">
                     <div class="col">
-                        <label for="recipient-name" class="col-form-label">Tanggal Komplain</label>
+                        <label for="recipient-name" class="col-form-label">Screenshot bukti</label>
                        <input class="form-control form-control-sm" id="formFileSm" type="file">
                     </div>
                 </div>
@@ -745,6 +794,7 @@ div.dt-buttons {
     <script src="datatable/jquery-3.5.1.js"></script>
     <script src="datatable/jquery.dataTables.min.js"></script>
     <script src="datatable/dataTables.buttons.min.js"></script>
+    <script src="datepicker/js/bootstrap-datepicker.js"></script>
     
     <script type="text/javascript">
         $(document).ready(function() {
@@ -759,7 +809,12 @@ div.dt-buttons {
             {
                 text: 'All',
                 action: function ( e, dt, node, config ) {
-                    alert( 'Button activated' );
+                   var x = document.getElementById("myDIV");
+                  if (x.style.display === "none") {
+                    x.style.display = "block";
+                  } else {
+                    x.style.display = "none";
+                  }
                 }
             },
             {
@@ -785,12 +840,12 @@ div.dt-buttons {
 } );
     </script>
     <script type="text/javascript">
-        Highcharts.chart('container', {
+        Highcharts.chart('container1', {
     chart: {
         type: 'column'
     },
     title: {
-        text: ''
+        text: 'Tahun 2022'
     },
     xAxis: {
         categories: [
@@ -818,7 +873,7 @@ div.dt-buttons {
     tooltip: {
         headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
         pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+            '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
         footerFormat: '</table>',
         shared: true,
         useHTML: true
@@ -855,6 +910,91 @@ div.dt-buttons {
 
     }]
 });
+
+
+   Highcharts.chart('container', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Juli Tahun 2022'
+    },
+    xAxis: {
+        categories: [
+            '01-07',
+            '08-15',
+            '16-23',
+            '23-30'
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: ''
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [{
+        name: 'Pulsa',
+        data: [49, 71, 106, 129]
+
+    }, {
+        name: 'Cash Out',
+        data: [83, 78, 98, 93]
+
+    }, {
+        name: 'PLN',
+        data: [48, 38, 39, 41]
+
+    }, {
+        name: 'Transfer',
+        data: [42, 33, 34, 39]
+
+    }, {
+        name: 'Cash In',
+        data: [42, 33, 34, 39]
+
+    }, {
+        name: 'Virtual Account',
+        data: [42, 33, 34, 39]
+
+    }]
+});
+          $('#tanggal').datepicker({
+                        format: "yyyy-mm-dd",
+                        autoclose:true,
+                        todayHighlight: true
+                    });
+//           $(document).ready(function(){
+//           $("#hide").click(function(){
+//             $("#container").hide();
+//           });
+//           $("#show").click(function(){
+//             $("#container").show();
+//           });
+// });
+function tampilinrek1(){
+   $( "#container" ).hide();
+   $( "#container1" ).show();
+    }
+function tampilinrek2(){
+   $( "#container1" ).hide();
+   $( "#container" ).show();
+    }
     </script>
 </body>
 
