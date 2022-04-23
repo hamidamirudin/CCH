@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,13 +9,9 @@
     <meta name="author" content="">
     <link rel="icon" href="images/48.png">
     <title>Dashboard CC HA!</title>
-
     <!-- Custom fonts for this <template></template>plate-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <link href="datatable/jquery.dataTables.min.css" rel="stylesheet">
@@ -25,11 +20,15 @@
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-    <link rel="stylesheet" href="datepicker/css/bootstrap-datepicker3.css"/>
-
-
-
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+    <link rel="stylesheet" href="datepicker/css/bootstrap-datepicker3.css" />
     <style>
+        @media (min-width: 992px) {
+  .modal-lg {
+    max-width: 50%;
+    height: 80%;
+  }
+}
         .highcharts-figure,
 .highcharts-data-table table {
     min-width: 310px;
@@ -89,117 +88,112 @@
 div.dt-buttons {
     float: right;
 }
+ .active::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        width: 4px;
+        height: 50px;
+        background-color: blue;
+    }
     </style>
-
 </head>
 
 <body id="page-top">
-
     <!-- Page Wrapper -->
     <div id="wrapper">
-
         <!-- Sidebar -->
         <!-- <ul  class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar"> -->
-            <ul  class="navbar-nav bg-gray sidebar sidebar-dark accordion" id="accordionSidebar">
-
+        <ul class="navbar-nav bg-gray sidebar sidebar-dark accordion" id="accordionSidebar">
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon">
-                    <img src="img/logokita.png">
+                    <img src="images/imgreal.png">
                 </div>
             </a>
-
             <!-- Divider -->
-          
-
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+            <li class="nav-item active" style=" display: grid;align-items: center;background-color: #F5F7FB;color: #F5F7FB; border-top-left-radius: 30px;border-bottom-left-radius: 30px;">
                 <a class="nav-link" href="index.html">
+                    <!-- <i class="fa fa-square" style="padding-left: 0px;padding-right: 0px;"></i> -->
                     <img src="img/function-line.png">
-                    <span><font color="blue">Dashboard</font></span></a>
+                    <span>
+                        <font color="blue">Dashboard</font>
+                    </span></a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">
-                    <img src="img/file-list-3-line.png">
-                    <span><font color="blue">Semua Selesai</font></span></a>
+                    <img src="images/user-received-2-line.png">
+                    <span>
+                        <font color="#8FA0B9">Semua</font>
+                    </span></a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">
                     <img src="img/checkbox-circle-line.png">
-                    <span><font color="blue">Selesai</font></span></a>
+                    <span>
+                        <font color="#8FA0B9">Selesai</font>
+                    </span></a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">
-                    <img src="img/refresh-line.png">
-                    <span><font color="blue">Today</font></span></a>
+                    <img src="images/refresh-line.png">
+                    <span>
+                        <font color="#8FA0B9">Hari ini</font>
+                    </span></a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">
-                    <img src="img/home-6-line.png">
-                    <span><font color="blue">Tidak Selesai</font></span></a>
+                    <img src="images/file-list-3-line.png">
+                    <span>
+                        <font color="#8FA0B9">Tidak Selesai</font>
+                    </span></a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">
-                    <img src="img/home-6-line.png">
-                    <span><font color="blue">Komplain Baru</font></span></a>
+                    <img src="images/Chat_plus.png">
+                    <span>
+                        <font color="#8FA0B9">Komplain Baru</font>
+                    </span></a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">
-                    <img src="img/home-6-line.png">
-                    <span><font color="blue">Complaint Priorty</font></span></a>
+                    <img src="images/Book.png">
+                    <span>
+                        <font color="#8FA0B9">Complaint Priorty</font>
+                    </span></a>
             </li>
-
             <!-- Divider -->
-            
-
-            
-
-            
-
-              <hr style="display: block; height: 1px;
+            <hr style="display: block; height: 1px;
     border: 0; border-top: 1px solid #ccc;
     margin: 1em 0; padding: 0;" class="sidebar-divider my-0">
-      <li class="nav-item active">
-                <a class="nav-link" href="index.html">
-                    <img src="img/smartphone-line.png">
-                    <span><font color="blue">My Apps</font></span></a>
-            </li>
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">
                     <img src="img/settings-4-line.png">
-                    <span><font color="blue">Settings</font></span></a>
+                    <span>
+                        <font color="#8FA0B9">Settings</font>
+                    </span></a>
             </li>
-
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
-
-            
-
         </ul>
         <!-- End of Sidebar -->
-
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
-
             <!-- Main Content -->
             <div id="content">
-
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
-
                     <!-- Topbar Search -->
-                    <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                aria-label="Search" aria-describedby="basic-addon2">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button class="btn btn-primary" type="button" style="background-color: #003AD2;">
                                     <i class="fas fa-search fa-sm"></i>
@@ -207,32 +201,26 @@ div.dt-buttons {
                             </div>
                         </div>
                     </form>
-                    
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <li style="padding-top:16px">
                             <a href='#myModal' data-toggle='modal' class="btn btn-primary btn-icon-split" style="background-color: #003AD2;">
-                                        <span class="icon text-white-50" style="background-color: #003AD2;">
-                                            <i class="fas fa-plus" style="color: white;"></i>
-                                        </span>
-                                        <span class="text">Complaint</span>
-                                    </a>
+                                <span class="icon text-white-50" style="background-color: #003AD2;">
+                                    <i class="fas fa-plus" style="color: white;"></i>
+                                </span>
+                                <span class="text">Complaint</span>
+                            </a>
                         </li>
-
                         <!-- Nav Item - Search Dropdown (Visible Only XS) -->
                         <li class="nav-item dropdown no-arrow d-sm-none">
-                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-search fa-fw"></i>
                             </a>
                             <!-- Dropdown - Messages -->
-                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-                                aria-labelledby="searchDropdown">
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
                                 <form class="form-inline mr-auto w-100 navbar-search">
                                     <div class="input-group">
-                                        <input type="text" class="form-control bg-light border-0 small"
-                                            placeholder="Search for..." aria-label="Search"
-                                            aria-describedby="basic-addon2">
+                                        <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
                                         <div class="input-group-append">
                                             <button class="btn btn-primary" type="button">
                                                 <i class="fas fa-search fa-sm"></i>
@@ -242,68 +230,59 @@ div.dt-buttons {
                                 </form>
                             </div>
                         </li>
-
                         <!-- Nav Item - Alerts -->
-                      
-
                         <!-- Nav Item - Messages -->
                         <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-bell fa-fw"></i>
                                 <!-- Counter - Messages -->
                                 <span class="badge badge-danger badge-counter">7</span>
                             </a>
                             <!-- Dropdown - Messages -->
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="messagesDropdown">
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
                                 <h6 class="dropdown-header">
-                                    Notifications  
+                                    Notifications
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
                                         <div class="text-truncate">Rizal Anandi has create Complaint</div>
                                         <div class="middle">"Transfer tidak bisa dilakukan, kode PIN salah.Padahal itu benar,saya coba ganti di setting dan bisa,tapi transfer tidak bisa"</div>
-                                        <div class="small text-gray-500">Today at 09:42 AM <div class="card bg-gradient-danger text-white"><center>High</center></div></div>
+                                        <div class="small text-gray-500">Today at 09:42 AM <div class="card bg-gradient-danger text-white">
+                                                <center>High</center>
+                                            </div>
+                                        </div>
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
                                         <div class="text-truncate">Rizal Anandi has create Complaint</div>
                                         <div class="middle">"Transfer tidak bisa dilakukan, kode PIN salah.Padahal itu benar,saya coba ganti di setting dan bisa,tapi transfer tidak bisa"</div>
-                                        <div class="small text-gray-500">Today at 09:42 AM <div class="card bg-gradient-info text-white"><center>low</center></div></div>
+                                        <div class="small text-gray-500">Today at 09:42 AM <div class="card bg-gradient-info text-white">
+                                                <center>low</center>
+                                            </div>
+                                        </div>
                                     </div>
                                 </a>
-                                
-                                
-                                
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
                             </div>
                         </li>
-
                         <div class="topbar-divider d-none d-sm-block"></div>
-
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Rizal Anandi</span>
-                                <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="userDropdown">
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
@@ -323,37 +302,31 @@ div.dt-buttons {
                                 </a>
                             </div>
                         </li>
-
                     </ul>
-
                 </nav>
                 <!-- End of Topbar -->
-
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h5 mb-0 text-gray-800">CCHA! Activity POSPAY PT. Pos Indonesia</h1>
-                        
                     </div>
-
                     <!-- Content Row -->
                     <div class="row">
-
                         <!-- Earnings (Monthly) Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card bg-gradient-primary text-white h-100 py-2">
+                            <div class="card  text-white h-100 py-2" style="background-image: linear-gradient(to right, #9852F0, #5900C9);">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-uppercase mb-1">
-                                                <font size="1">Semua Complaint</font></div>
+                                                <font size="1"><b>Semua Complaint</b></font>
+                                            </div>
                                             <div class="h5 mb-0 font-weight-bold ">56</div>
                                             <div class="text-xs font-weight-bold  text-uppercase mb-1">
-                                                <font size="1">Tiket Complaint</font></div>
+                                                <font size="1">Tiket Complaint</font>
+                                            </div>
                                         </div>
-
                                         <div class="col-auto">
                                             <img src="images/user.png">
                                         </div>
@@ -361,64 +334,65 @@ div.dt-buttons {
                                 </div>
                             </div>
                         </div>
-
                         <!-- Earnings (Monthly) Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card bg-gradient-info text-white h-100 py-2">
+                            <div class="card  text-white h-100 py-2" style="background-image: linear-gradient(to right, #0097EC, #003AD2);">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold  text-uppercase mb-1">
-                                                <font size="2">Complaint Selesai</font></div>
+                                                <font size="1"><b>Complaint Selesai</b></font>
+                                            </div>
                                             <div class="h5 mb-0 font-weight-bold ">24</div>
                                             <div class="text-xs font-weight-bold  text-uppercase mb-1">
-                                                <font size="1">Tiket Complaint</font></div>
+                                                <font size="1">Tiket Complaint</font>
+                                            </div>
                                         </div>
                                         <div class="col-auto">
-                                            <img src="images/honour.png">
+                                            <img src="images/checkbox-circle-line.png">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <!-- Earnings (Monthly) Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card bg-gradient-success text-white h-100 py-2">
+                            <div class="card  text-white h-100 py-2" style="background-image: linear-gradient(to right, #1FD071, #00A843);">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold  text-uppercase mb-1"><font size="1"> Complaint Follow Up Today</font>
+                                            <div class="text-xs font-weight-bold  text-uppercase mb-1">
+                                                <font size="1"><b>Complaint Follow Up Today</b></font>
                                             </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
                                                     <div class="h5 mb-0 mr-3 font-weight-bold ">12</div>
                                                     <div class="text-xs font-weight-bold  text-uppercase mb-1">
-                                                <font size="1">Tiket Complaint</font></div>
+                                                        <font size="1">Tiket Complaint</font>
+                                                    </div>
                                                 </div>
-
-                                                
                                             </div>
                                         </div>
                                         <div class="col-auto">
-                                            <img src="images/circle.png">
+                                            <img src="images/vector.png">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <!-- Pending Requests Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card bg-gradient-danger text-white h-100 py-2">
+                            <div class="card  text-white h-100 py-2" style="background-image: linear-gradient(to right, #F39034, #FF2727);">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold  text-uppercase mb-1">
-                                                <font size="1">Complaint Tidak Selesai </font></div>
+                                                <font size="1"><b>Complaint Tidak Selesai</b></font>
+                                            </div>
                                             <div class="h5 mb-0 font-weight-bold ">3</div>
                                             <div class="text-xs font-weight-bold  text-uppercase mb-1">
-                                                <font size="1">Tiket Complaint</font></div>
+                                                <font size="1">Tiket Complaint</font>
+                                            </div>
                                         </div>
                                         <div class="col-auto">
                                             <img src="images/list.png">
@@ -428,271 +402,247 @@ div.dt-buttons {
                             </div>
                         </div>
                     </div>
-
                     <!-- Content Row -->
-
                     <div class="row">
-
                         <!-- Area Chart -->
                         <div style="padding-left: 0px" class="col-xl-7 col-lg-7">
                             <div class="card shadow mb-4">
                                 <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between" style="padding-left: 6px">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between" style="padding-left: 6px">
                                     <h6 class="m-0 font-weight-bold text-primary">New Complaint</h6>
-                                    
                                 </div>
                                 <!-- Card Body -->
                                 <div class="card-body" style="height: 400px;overflow-y: scroll;">
-                                    
                                     <div class="form-group row">
-       <div class="table-responsive">
-                                <table class="table table-bordered" id="example" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th style="vertical-align:middle;">No.Tiket</th>
-                                            <th style="vertical-align:middle;">Customer</th>
-                                            <th style="text-align:center;">Complaint Priorty</th>
-                                            <th style="text-align:center;">Tanggal Complaint</th>
-                                            <th style="vertical-align:middle;">About</th>
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered" id="example" width="100%" cellspacing="0">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="vertical-align:middle;">No.Tiket</th>
+                                                        <th style="vertical-align:middle;">Customer</th>
+                                                        <th style="text-align:center;">Complaint Priorty</th>
+                                                        <th style="text-align:center;">Tanggal Complaint</th>
+                                                        <th style="vertical-align:middle;">About</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>S000083</td>
+                                                        <td>Rizal Anandi</td>
+                                                        <td style="vertical-align: middle;"><a href='#myModal1' data-toggle='modal'> <img src="images/btn.png"></a></td>
+                                                        <td>22/08/2022</td>
+                                                        <td>Pulsa</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>S000023</td>
+                                                        <td>Abdul Hamid</td>
+                                                        <td style="vertical-align: middle;"><img src="images/btn.png"></td>
+                                                        <td>22/08/2022</td>
+                                                        <td>Transfer</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>S000013</td>
+                                                        <td>Riska Aliansah</td>
+                                                        <td style="vertical-align: middle;"><img src="images/btn2.png">
+                                        </div>
+                                        </td>
+                                        <td>22/08/2022</td>
+                                        <td>Cash Out</td>
                                         </tr>
-                                    </thead>
-                                    
-                                    <tbody>
                                         <tr>
-                                            <td>S000083</td>
-                                            <td>Rizal Anandi</td>
-                                            <td style="vertical-align: middle;"><div class="card bg-gradient-danger text-white"><center>High</center></div></td>
+                                            <td>S000023</td>
+                                            <td>Reza Akbar</td>
+                                            <td style="vertical-align: middle;"><img src="images/btn.png"></td>
                                             <td>22/08/2022</td>
-                                            <td>Pulsa</td>
+                                            <td>PLN</td>
                                         </tr>
                                         <tr>
-                                            <td>S000083</td>
-                                            <td>Rizal Anandi</td>
-                                            <td style="vertical-align: middle;"><div class="card bg-gradient-danger text-white"><center>High</center></div></td>
+                                            <td>S000003</td>
+                                            <td>Elsia</td>
+                                            <td style="vertical-align: middle;"><img src="images/btn.png"></td>
                                             <td>22/08/2022</td>
-                                            <td>Pulsa</td>
+                                            <td>Virtual Account</td>
                                         </tr>
-                                        <tr>
-                                            <td>S000083</td>
-                                            <td>Rizal Anandi</td>
-                                            <td style="vertical-align: middle;"><div class="card bg-gradient-danger text-white"><center>High</center></div></td>
-                                            <td>22/08/2022</td>
-                                            <td>Pulsa</td>
-                                        </tr>
-                                        <tr>
-                                            <td>S000083</td>
-                                            <td>Rizal Anandi</td>
-                                            <td style="vertical-align: middle;"><div class="card bg-gradient-danger text-white"><center>High</center></div></td>
-                                            <td>22/08/2022</td>
-                                            <td>Pulsa</td>
-                                        </tr>
-                                        <tr>
-                                            <td>S000083</td>
-                                            <td>Rizal Anandi</td>
-                                            <td style="vertical-align: middle;"><div class="card bg-gradient-warning text-white"><center>Middle</center></div></td>
-                                            <td>22/08/2022</td>
-                                            <td>Paket Data</td>
-                                        </tr>
-                                        <tr>
-                                            <td>S000083</td>
-                                            <td>Rizal Anandi</td>
-                                            <td style="vertical-align: middle;"><div class="card bg-gradient-warning text-white"><center>Middle</center></div></td>
-                                            <td>22/08/2022</td>
-                                            <td>Paket Data</td>
-                                        </tr>
-                                        <tr>
-                                            <td>S000083</td>
-                                            <td>Rizal Anandi</td>
-                                            <td style="vertical-align: middle;"><div class="card bg-gradient-info text-white"><center>Low</center></div></td>
-                                            <td>22/08/2022</td>
-                                            <td>Paket Data</td>
-                                        </tr>
-                                        
-                                    </tbody>
-                                </table>
-                            </div>
-      
-    </div>
-
+                                        </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Pie Chart -->
-                           <div style="padding-left: 0px;padding-right: 0;" class="col-xl-2 col-lg-2">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between" style="padding-left: 6px">
-                                    <h6 class="m-0 font-weight-bold text-primary">Incoming Complaint</h6>
-                                    
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body" style="height: 400px">
-                                    <font size="2">
+                    </div>
+                    <!-- Pie Chart -->
+                    <div style="padding-left: 0px;padding-right: 0;" class="col-xl-2 col-lg-2">
+                        <div class="card shadow mb-4">
+                            <!-- Card Header - Dropdown -->
+                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between" style="padding-left: 6px">
+                                <h6 class="m-0 font-weight-bold text-primary">Incoming Complaint</h6>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="card-body" style="height: 400px">
+                                <font size="2">
                                     <div class="row">
-                                        <div style="padding-left: 0px;" class="col-8">Total Incoming</font></div>
-                                        <div class="col-4">130</div>
-                                    </div>
-                                    </font>
-                                    <hr>
-                                    <font size="2">
-                                    <div class="row">
-                                        <div style="padding-left: 0px;" class="col-8">Priority Daily</font></div>
-                                    </div>
+                                        <div style="padding-left: 0px;" class="col-8">Total Imcoming
                                 </font>
-
-
-                                     <div class="row">
-                                        <div style="padding-left: 0px;" class="col-8"><i class="far fa-circle fa-xs" style="color: red"> </i><font size="2" color="red"> High Priorty</font></div>
-                                        <div class="col-4">130</div>
-                                    </div> 
-                                    <br>
-                                     <div class="row">
-                                        <div style="padding-left: 0px;" class="col-8"><i class="far fa-circle fa-xs" style="color: yellow"> </i><font size="2" color="yellow"> Mid Priorty</font></div>
-                                        <div class="col-4">130</div>
-                                    </div>
-                                    <br>
-                                    <div class="row">
-                                        <div style="padding-left: 0px;" class="col-8"><i class="far fa-circle fa-xs" style="color: blue"> </i><font size="2" color="blue"> Low Priorty</font></div>
-                                        <div class="col-4">130</div>
-                                    </div>
-                                    <br>
-                                    <div class="row">
-                                        <div style="padding-left: 0px;" class="col-8"><i class="far fa-circle fa-xs" style="color: grey"> </i><font size="2" color="grey"> Spesial Case</font></div>
-                                        <div class="col-4">130</div>
-                                    </div>
-                                    
-                                    
-                                </div>
                             </div>
+                            <div class="col-4">130</div>
                         </div>
-                        <div style="padding-left: 10px;padding-right: 0;" class="col-xl-3 col-lg-3">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between" style="padding-left: 6px">
-                                    <h6 class="m-0 font-weight-bold text-primary">Team CCHA!</h6>
-                                    
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body" style="height: 400px">
-                                <div class="row">
-                                        <div style="padding-left: 0px;" class="col-7"><img class="rounded-circle" src="img/hamid.jpg"
-                                            alt="..." width="30" height="30" ><font size="2"> &nbspAbdul Hamid</font></div>
-                                        <div class="col-5"><font size="1">50 Tiket Done <i class="far fa-check-circle fa-xs" style="color: blue"> </i></font></div>
-
-                                    </div> 
-                                    <br>
-                                     <div class="row">
-                                        <div style="padding-left: 0px;" class="col-7"><img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                            alt="..." width="35" ><font size="2"> &nbspAbdul Hamid</font></div>
-                                        <div class="col-5"><font size="1">49/1 Tiket Lagi </font></div>
-                                    </div>
-                                    <br>
-                                    <div class="row">
-                                        <div style="padding-left: 0px;" class="col-7"><img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                            alt="..." width="35" ><font size="2"> &nbspAbdul Hamid</font></div>
-                                        <div class="col-5"><font size="1">49/1 Tiket Lagi </font></div>
-                                    </div>
-                                    <br>
-                                    <div class="row">
-                                        <div style="padding-left: 0px;" class="col-7"><img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                            alt="..." width="35" ><font size="2"> &nbspAbdul Hamid</font></div>
-                                        <div class="col-5"><font size="1">49/1 Tiket Lagi </font></div>
-                                    </div>
-                                    <br>
-                                    <div class="row">
-                                        <div style="padding-left: 0px;" class="col-7"><img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                            alt="..." width="35" ><font size="2"> &nbspAbdul Hamid</font></div>
-                                        <div class="col-5"><font size="1">49/1 Tiket Lagi </font></div>
-                                    </div>
-                                    <br>
-                                    <div class="row">
-                                        <div style="padding-left: 0px;" class="col-7"><img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                            alt="..." width="35" ><font size="2"> &nbspAbdul Hamid</font></div>
-                                        <div class="col-5"><font size="1">49/1 Tiket Lagi </font></div>
-                                    </div>
-                                    <br>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        
-
-                        
-
-                            <!-- Area Chart -->
-                            <div class="card shadow mb-4" style="width: 1200px">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Realtime Complaint</h6>
-                                </div>
-                                <div class="card-body">
-                                    <!-- <a href="#" onClick='tampilinrek1()'>hide</a> -->
-                                      <nav class="navbar navbar-expand navbar-light bg-light mb-4">
-                                        <ul class="navbar-nav ml-auto">
-                                            <li class="nav-item dropdown">
-                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                                    role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">
-                                                    Periode
-                                                </a>
-                                                <div class="dropdown-menu dropdown-menu-right animated--grow-in"
-                                                    aria-labelledby="navbarDropdown">
-                                                    <a class="dropdown-item" href="#" onClick='tampilinrek1()'>Monthly</a>
-                                                    <a class="dropdown-item" href="#" onClick='tampilinrek2()'>Weekly</a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                    <div id="container">
-                                        
-                                    </div>
-                                    <div id="container1" style="display: none;">
-                                        dasdasdsa
-                                    </div>
-    
-
-                                </div>
-                            </div>
-
-                        
-                    
-
-                    
-
-                </div>
-                
-
-
-            </div>
-            <!-- End of Main Content -->
-
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Gatot Kaca 2022</span>
+                        </font>
+                        <hr>
+                        <font size="2">
+                            <div class="row">
+                                <div style="padding-left: 0px;" class="col-8">Priority Daily
+                        </font>
                     </div>
                 </div>
-            </footer>
-            <!-- End of Footer -->
-
+                </font>
+                <div class="row">
+                    <div style="padding-left: 0px;" class="col-8"><i class="far fa-circle fa-xs" style="color: red"> </i>
+                        <font size="2" color="red"> High Priorty</font>
+                    </div>
+                    <div class="col-4">130</div>
+                </div>
+                <br>
+                <div class="row">
+                    <div style="padding-left: 0px;" class="col-8"><i class="far fa-circle fa-xs" style="color: yellow"> </i>
+                        <font size="2" color="yellow"> Mid Priorty</font>
+                    </div>
+                    <div class="col-4">130</div>
+                </div>
+                <br>
+                <div class="row">
+                    <div style="padding-left: 0px;" class="col-8"><i class="far fa-circle fa-xs" style="color: blue"> </i>
+                        <font size="2" color="blue"> Low Priorty</font>
+                    </div>
+                    <div class="col-4">130</div>
+                </div>
+                <br>
+                <div class="row">
+                    <div style="padding-left: 0px;" class="col-8"><i class="far fa-circle fa-xs" style="color: grey"> </i>
+                        <font size="2" color="grey"> Spesial Case</font>
+                    </div>
+                    <div class="col-4">130</div>
+                </div>
+            </div>
         </div>
-        <!-- End of Content Wrapper -->
-
+    </div>
+    <div style="padding-left: 10px;padding-right: 0;" class="col-xl-3 col-lg-3">
+        <div class="card shadow mb-4">
+            <!-- Card Header - Dropdown -->
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between" style="padding-left: 6px">
+                <h6 class="m-0 font-weight-bold text-primary">Team CCHA!</h6>
+            </div>
+            <!-- Card Body -->
+            <div class="card-body" style="height: 400px">
+                <div class="row">
+                    <div style="padding-left: 0px;" class="col-7"><img class="rounded-circle" src="img/hamid.jpg" alt="..." width="30" height="30">
+                        <font size="2"> &nbspAbdul Hamid</font>
+                    </div>
+                    <div class="col-5">
+                        <font size="1">50 Tiket Done <i class="far fa-check-circle fa-xs" style="color: blue"> </i></font>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div style="padding-left: 0px;" class="col-7"><img class="rounded-circle" src="img/undraw_profile_1.svg" alt="..." width="35">
+                        <font size="2"> &nbspAbdul Hamid</font>
+                    </div>
+                    <div class="col-5">
+                        <font size="1">49/1 Tiket Lagi </font>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div style="padding-left: 0px;" class="col-7"><img class="rounded-circle" src="img/undraw_profile_1.svg" alt="..." width="35">
+                        <font size="2"> &nbspAbdul Hamid</font>
+                    </div>
+                    <div class="col-5">
+                        <font size="1">49/1 Tiket Lagi </font>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div style="padding-left: 0px;" class="col-7"><img class="rounded-circle" src="img/undraw_profile_1.svg" alt="..." width="35">
+                        <font size="2"> &nbspAbdul Hamid</font>
+                    </div>
+                    <div class="col-5">
+                        <font size="1">49/1 Tiket Lagi </font>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div style="padding-left: 0px;" class="col-7"><img class="rounded-circle" src="img/undraw_profile_1.svg" alt="..." width="35">
+                        <font size="2"> &nbspAbdul Hamid</font>
+                    </div>
+                    <div class="col-5">
+                        <font size="1">49/1 Tiket Lagi </font>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div style="padding-left: 0px;" class="col-7"><img class="rounded-circle" src="img/undraw_profile_1.svg" alt="..." width="35">
+                        <font size="2"> &nbspAbdul Hamid</font>
+                    </div>
+                    <div class="col-5">
+                        <font size="1">49/1 Tiket Lagi </font>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <!-- Area Chart -->
+    <div class="card shadow mb-4" style="width: 1200px">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Realtime Complaint</h6>
+        </div>
+        <div class="card-body">
+            <!-- <a href="#" onClick='tampilinrek1()'>hide</a> -->
+            <nav class="navbar navbar-expand navbar-light bg-light mb-4">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Periode
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right animated--grow-in" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#" onClick='tampilinrek3()'>Daily</a>
+                            <a class="dropdown-item" href="#" onClick='tampilinrek2()'>Weekly</a>
+                            <a class="dropdown-item" href="#" onClick='tampilinrek1()'>Monthly</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div id="container">
+            </div>
+            <div id="container1" style="display: none;">
+                dasdasdsa
+            </div>
+            <div id="container2" style="display: none;">
+                dasdasdsa
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- End of Main Content -->
+    <!-- Footer -->
+    <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+                <span>Copyright &copy; Gatot Kaca 2021</span>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+    </div>
+    <!-- End of Content Wrapper -->
     </div>
     <!-- End of Page Wrapper -->
-
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
-
     <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -709,304 +659,513 @@ div.dt-buttons {
         </div>
     </div>
     <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          
-          <h5 class="modal-title"><b>Tambah Komplain</b></h5>
-        </div>
-        <div class="modal-body">
-          <form>
-          <div class="form-group">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <label for="recipient-name" class="col-form-label">Nama</label>
-                        <input type="text" class="form-control" id="recipient-name" placeholder="Nama costumer">
-                    </div>
-                    <div class="col">
-                        <label for="recipient-name" class="col-form-label">Email</label>
-                        <input type="text" class="form-control" id="recipient-name" placeholder="Email costumer">
-                    </div>
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><b>Tambah Komplain</b></h5>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <label for="recipient-name" class="col-form-label">No.Phone</label>
-                        <input type="text" class="form-control" id="recipient-name" placeholder="Phone costumer">
-                    </div>
-                    <div class="col">
-                      
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <label for="recipient-name" class="col-form-label">Tanggal Komplain</label>
-                         <div class="input-group">
-                                        <input type="text" name="tanggal" class="form-control" id="tanggal" readonly="readonly" />
-                                        <!-- <input type="text" name="tanggal" class="tanggal" value = '' readonly="readonly" /> -->
-                                        <div class="input-group-append">
-                                            <button class="btn btn-primary" type="button">
-                                                <i class="fas fa-calendar fa-sm"></i>
-                                            </button>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="recipient-name" class="col-form-label">Nama</label>
+                                        <input type="text" class="form-control" id="recipient-name" placeholder="Nama costumer">
+                                    </div>
+                                    <div class="col">
+                                        <label for="recipient-name" class="col-form-label">Email</label>
+                                        <input type="text" class="form-control" id="recipient-name" placeholder="Email costumer">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="recipient-name" class="col-form-label">No.Phone</label>
+                                        <input type="text" class="form-control" id="recipient-name" placeholder="Phone costumer">
+                                    </div>
+                                    <div class="col">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="recipient-name" class="col-form-label">Tanggal Komplain</label>
+                                        <div class="input-group">
+                                            <input type="text" name="tanggal" class="form-control" id="tanggal" readonly="readonly" />
+                                            <!-- <input type="text" name="tanggal" class="tanggal" value = '' readonly="readonly" /> -->
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary" type="button">
+                                                    <i class="fas fa-calendar fa-sm"></i>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
-                    </div>
-                    <div class="col">
-                        <label for="recipient-name" class="col-form-label">Bagian Kendala</label>
-
-                        <!-- <input type="text" class="form-control" id="recipient-name" placeholder="Email costumer"> -->
-                        <select class="form-control">
-                            <option>Pilih Kendala</option>
-                            <option>Gangguan Sistem</option>
-                            <option>Gagal Entri</option>
-                        </select>
-                    </div>
+                                    <div class="col">
+                                        <label for="recipient-name" class="col-form-label">Bagian Kendala</label>
+                                        <!-- <input type="text" class="form-control" id="recipient-name" placeholder="Email costumer"> -->
+                                        <select class="form-control">
+                                            <option selected="true" disabled="disabled">Pilih Kendala</option>
+                                            <option>Akun & Pengaturan</option>
+                                            <option>Upgrade Rekening</option>
+                                            <option>Transfer</option>
+                                            <option>Billing</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="recipient-name" class="col-form-label">Deskripsi</label>
+                                        <textarea class="form-control" rows="4" placeholder="Tuliskan deskripsi kendala"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="recipient-name" class="col-form-label">Screenshot bukti</label>
+                                        <input class="form-control " id="formFileSm" type="file">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <label for="recipient-name" class="col-form-label">Deskripsi</label>
-                        <textarea class="form-control" rows="4" placeholder="Tuliskan deskripsi kendala"></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <label for="recipient-name" class="col-form-label">Screenshot bukti</label>
-                       <input class="form-control form-control-sm" id="formFileSm" type="file">
-                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onClick='tambahcomplain()'>Tambahkan Komplain</button>
                 </div>
             </div>
         </div>
-      </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Tambahkan Komplain</button>
-        </div>
-      </div>
-      
     </div>
-  </div>
-
+    <div class="modal fade" id="myModal1" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><b>Detail Komplain</b></h5>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                No: Komplain : S0000083
+                                <div class="row">
+                                    <div class="col-8 col-sm-6">
+                                        <font size="1">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    No.Transaksi
+                                                </div>
+                                                <div class="col" style="text-align:left;">
+                                                    165038384192
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    Tanggal Transaksi
+                                                </div>
+                                                <div class="col" style="text-align:left;">
+                                                    19-04-2022 | 22:57:22
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    Tanggal Komplain
+                                                </div>
+                                                <div class="col" style="text-align:left;">
+                                                    19-04-2022 | 07:15:12
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    Nama Pengirim
+                                                </div>
+                                                <div class="col" style="text-align:left;">
+                                                    Rizal Anandi
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    Rekening Penerima
+                                                </div>
+                                                <div class="col" style="text-align:left;">
+                                                    0143728374
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    Nama Penerima
+                                                </div>
+                                                <div class="col" style="text-align:left;">
+                                                    Tsabit Maulana
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    Rekening Penerima
+                                                </div>
+                                                <div class="col" style="text-align:left;">
+                                                    0128483722
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    Nominal
+                                                </div>
+                                                <div class="col" style="text-align:left;">
+                                                    Rp 125.000
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    Bea Admin
+                                                </div>
+                                                <div class="col" style="text-align:left;">
+                                                    Rp 0
+                                                </div>
+                                            </div>
+                                        </font>
+                                    </div>
+                                    <div class="col-4 col-sm-6">
+                                        <font size="2">
+                                         <div class="row">
+                                                <div class="col-12">
+                                                  <font size="2" color="red"> <b>High Priorty</b></font> &nbsp Sebelum 11:15:12
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                  “Saya melakukan Transfer antar Pospay mendapatkan notifikasi Transfer Berhasil, dan memotong Saldo Pospay saya, namun tidak masuk dananya ke penerima”
+                                                </div>
+                                            </div>
+                                        </font>
+                                        <div class="row">
+                                                <div class="col-3">
+                                                    <img src="images/photo2.png">
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="images/photo3.png">
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="images/photo4.png">
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <center><button type="button" class="btn btn-primary" data-dismiss="modal" onClick='responcomplain()'>Respond Komplain</button></center>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-
     <!-- Page level plugins -->
-    
-
     <!-- Page level custom scripts -->
-    
     <script src="datatable/jquery-3.5.1.js"></script>
     <script src="datatable/jquery.dataTables.min.js"></script>
     <script src="datatable/dataTables.buttons.min.js"></script>
     <script src="datepicker/js/bootstrap-datepicker.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
-    $('#example').DataTable({
-        "lengthChange": false,
-        "ordering": false,
-        "info":     false,
-         "paging":   false,
-          "dom": '<"pull-left"f><"pull-right"l>tip',
-         dom: 'Bfrtip',
-        buttons: [
-            {
-                text: 'All',
-                action: function ( e, dt, node, config ) {
-                   var x = document.getElementById("myDIV");
-                  if (x.style.display === "none") {
-                    x.style.display = "block";
-                  } else {
-                    x.style.display = "none";
-                  }
+    $(document).ready(function() {
+        $('#example').DataTable({
+            "lengthChange": false,
+            "ordering": false,
+            "info": false,
+            "paging": false,
+            "dom": '<"pull-left"f><"pull-right"l>tip',
+            dom: 'Bfrtip',
+            buttons: [{
+                    text: 'All',
+                    action: function(e, dt, node, config) {
+                        var x = document.getElementById("myDIV");
+                        if (x.style.display === "none") {
+                            x.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                        }
+                    }
+                },
+                {
+                    text: 'High',
+                    action: function(e, dt, node, config) {
+                        alert('Button activated');
+                    }
+                },
+                {
+                    text: 'Mid',
+                    action: function(e, dt, node, config) {
+                        alert('Button activated');
+                    }
+                },
+                {
+                    text: 'Low',
+                    action: function(e, dt, node, config) {
+                        alert('Button activated');
+                    }
                 }
-            },
-            {
-                text: 'High',
-                action: function ( e, dt, node, config ) {
-                    alert( 'Button activated' );
-                }
-            },
-            {
-                text: 'Mid',
-                action: function ( e, dt, node, config ) {
-                    alert( 'Button activated' );
-                }
-            },
-            {
-                text: 'Low',
-                action: function ( e, dt, node, config ) {
-                    alert( 'Button activated' );
-                }
-            }
-        ]
+            ]
+        });
     });
-} );
     </script>
     <script type="text/javascript">
-        Highcharts.chart('container1', {
-    chart: {
-        type: 'column'
-    },
-    title: {
-        text: 'Tahun 2022'
-    },
-    xAxis: {
-        categories: [
-            'Jan',
-            'Feb',
-            'Mar',
-            'Apr',
-            'May',
-            'Jun',
-            'Jul',
-            'Aug',
-            'Sep',
-            'Oct',
-            'Nov',
-            'Dec'
-        ],
-        crosshair: true
-    },
-    yAxis: {
-        min: 0,
-        title: {
-            text: ''
-        }
-    },
-    tooltip: {
-        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-            '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
-        footerFormat: '</table>',
-        shared: true,
-        useHTML: true
-    },
-    plotOptions: {
-        column: {
-            pointPadding: 0.2,
-            borderWidth: 0
-        }
-    },
-    series: [{
-        name: 'Pulsa',
-        data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
-
-    }, {
-        name: 'Cash Out',
-        data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
-
-    }, {
-        name: 'PLN',
-        data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
-
-    }, {
-        name: 'Transfer',
-        data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
-
-    }, {
-        name: 'Cash In',
-        data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
-
-    }, {
-        name: 'Virtual Account',
-        data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
-
-    }]
-});
-
-
-   Highcharts.chart('container', {
-    chart: {
-        type: 'column'
-    },
-    title: {
-        text: 'Juli Tahun 2022'
-    },
-    xAxis: {
-        categories: [
-            '01-07',
-            '08-15',
-            '16-23',
-            '23-30'
-        ],
-        crosshair: true
-    },
-    yAxis: {
-        min: 0,
-        title: {
-            text: ''
-        }
-    },
-    tooltip: {
-        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-            '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
-        footerFormat: '</table>',
-        shared: true,
-        useHTML: true
-    },
-    plotOptions: {
-        column: {
-            pointPadding: 0.2,
-            borderWidth: 0
-        }
-    },
-    series: [{
-        name: 'Pulsa',
-        data: [49, 71, 106, 129]
-
-    }, {
-        name: 'Cash Out',
-        data: [83, 78, 98, 93]
-
-    }, {
-        name: 'PLN',
-        data: [48, 38, 39, 41]
-
-    }, {
-        name: 'Transfer',
-        data: [42, 33, 34, 39]
-
-    }, {
-        name: 'Cash In',
-        data: [42, 33, 34, 39]
-
-    }, {
-        name: 'Virtual Account',
-        data: [42, 33, 34, 39]
-
-    }]
-});
-          $('#tanggal').datepicker({
-                        format: "yyyy-mm-dd",
-                        autoclose:true,
-                        todayHighlight: true
-                    });
-//           $(document).ready(function(){
-//           $("#hide").click(function(){
-//             $("#container").hide();
-//           });
-//           $("#show").click(function(){
-//             $("#container").show();
-//           });
-// });
-function tampilinrek1(){
-   $( "#container" ).hide();
-   $( "#container1" ).show();
+    function tambahcomplain() {
+        //   alert('dsdsa');
+        swal("Berhasil!", "Komplain baru berhasil ditambahkan", "success");
     }
-function tampilinrek2(){
-   $( "#container1" ).hide();
-   $( "#container" ).show();
+    //swal("Our First Alert", "With some body text and success icon!", "success");
+    function responcomplain() {
+        //   alert('dsdsa');
+        //swal("Berhasil!", "Komplain baru berhasil ditambahkan", "success");
+    }
+    </script>
+    <script type="text/javascript">
+    Highcharts.chart('container1', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Tahun 2022'
+        },
+        xAxis: {
+            categories: [
+                'Jan',
+                'Feb',
+                'Mar',
+                'Apr',
+                'May',
+                'Jun',
+                'Jul',
+                'Aug',
+                'Sep',
+                'Oct',
+                'Nov',
+                'Dec'
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: ''
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Pulsa',
+            data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+
+        }, {
+            name: 'Cash Out',
+            data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+
+        }, {
+            name: 'PLN',
+            data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+
+        }, {
+            name: 'Transfer',
+            data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+
+        }, {
+            name: 'Cash In',
+            data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+
+        }, {
+            name: 'Virtual Account',
+            data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+
+        }]
+    });
+
+
+    Highcharts.chart('container', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Juli Tahun 2022'
+        },
+        xAxis: {
+            categories: [
+                '01-07',
+                '08-15',
+                '16-23',
+                '23-30'
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: ''
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Pulsa',
+            data: [49, 71, 106, 129]
+
+        }, {
+            name: 'Cash Out',
+            data: [83, 78, 98, 93]
+
+        }, {
+            name: 'PLN',
+            data: [48, 38, 39, 41]
+
+        }, {
+            name: 'Transfer',
+            data: [42, 33, 34, 39]
+
+        }, {
+            name: 'Cash In',
+            data: [42, 33, 34, 39]
+
+        }, {
+            name: 'Virtual Account',
+            data: [42, 33, 34, 39]
+
+        }]
+    });
+    Highcharts.chart('container2', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: '25-April-2022 '
+        },
+        xAxis: {
+            categories: [
+                '1',
+                '2',
+                '3',
+                '4',
+                '5',
+                '6',
+                '7',
+                '8',
+                '9',
+                '10',
+                '11',
+                '12',
+                '13',
+                '14',
+                '15', '16', '17', '18', '19', '20', '21', '23', '24', '25', '26', '27', '28', '29', '30'
+
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: ''
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Pulsa',
+            data: [1, 3, 4, 5, 1, 3, 4, 5, 1, 3, 4, 5, 1, 3, 4, 5, 1, 3, 4, 5, 1, 3, 3, 2, 2, 4, 5, 5, 5, 5, 4]
+
+        }, {
+            name: 'Cash Out',
+            data: [4, 5, 2, 3, 2, 1, 4, 5, 6, 6, 4, 3, 3, 4, 7, 9, 1, 8, 9, 3, 8, 5, 6, 7, 8, 9, 8, 7, 2, 4, 4]
+
+        }, {
+            name: 'PLN',
+            data: [4, 5, 2, 3, 3, 4, 5, 1, 3, 4, 5, 1, 3, 9, 3, 8, 5, 6, 7, 8, 9, 5, 5, 5, 5, 4, 5, 5, 5, 5, 4]
+
+        }, {
+            name: 'Transfer',
+            data: [6, 7, 8, 9, 5, 5, 5, 5, 4, 5, 5, 5, 5, 4, 9, 3, 8, 5, 6, 4, 5, 2, 3, 2, 1, 8, 5, 6, 7, 8, 9]
+
+        }, {
+            name: 'Cash In',
+            data: [6, 4, 5, 2, 3, 2, 1, 8, 5, 6, 7, 8, 9, 4, 5, 5, 5, 5, 4, 9, 3, 6, 7, 8, 9, 5, 5, 3, 2, 1, 8]
+
+        }, {
+            name: 'Virtual Account',
+            data: [7, 9, 1, 8, 9, 3, 8, 5, 6, 7, 8, 9, 8, 7, 2, 4, 4, 6, 7, 8, 9, 5, 5, 5, 5, 4, 5, 5, 4, 5, 5]
+
+        }]
+    });
+    $('#tanggal').datepicker({
+        format: "yyyy-mm-dd",
+        autoclose: true,
+        todayHighlight: true
+    });
+    //           $(document).ready(function(){
+    //           $("#hide").click(function(){
+    //             $("#container").hide();
+    //           });
+    //           $("#show").click(function(){
+    //             $("#container").show();
+    //           });
+    // });
+    function tampilinrek1() {
+        $("#container").hide();
+        $("#container1").show();
+        $("#container2").hide();
+        // return false;
+    }
+
+    function tampilinrek2() {
+        $("#container1").hide();
+        $("#container").show();
+        $("#container2").hide();
+    }
+
+    function tampilinrek3() {
+        $("#container1").hide();
+        $("#container2").show();
+        $("#container").hide();
     }
     </script>
 </body>
