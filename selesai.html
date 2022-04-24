@@ -117,42 +117,42 @@ div.dt-buttons {
             <li class="nav-item">
                 <a class="nav-link" href="dahsboard.html">
                     <!-- <i class="fa fa-square" style="padding-left: 0px;padding-right: 0px;"></i> -->
-                    <img src="img/function-line.png">
+                    <img src="img/function-line.png" style="opacity: 0.5;">
                     <span>
                         <font color="8FA0B9">Dashboard</font>
                     </span></a>
             </li>
             <li class="nav-item" >
                 <a class="nav-link" href="semua.html">
-                    <img src="images/user-received-2-line.png">
+                    <img src="images/user-received-2-line.png" style="opacity: 0.5;">
                     <span>
                         <font color="#8FA0B9">Semua</font>
                     </span></a>
             </li>
             <li class="nav-item active" style=" display: grid;align-items: center;background-color: #F5F7FB;color: #F5F7FB; border-top-left-radius: 30px;border-bottom-left-radius: 30px;">
                 <a class="nav-link" href="selesai.html">
-                    <img src="img/checkbox-circle-line.png">
+                    <img src="images/remix-icons/checkbox-circle-line.png">
                     <span>
                         <font color="blue">Selesai</font>
                     </span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="hariini.html">
-                    <img src="images/refresh-line.png">
+                    <img src="images/refresh-line.png" style="opacity: 0.5;">
                     <span>
                         <font color="#8FA0B9">Hari ini</font>
                     </span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="tidakselesai.html">
-                    <img src="images/file-list-3-line.png">
+                    <img src="images/file-list-3-line.png" style="opacity: 0.5;">
                     <span>
                         <font color="#8FA0B9">Tidak Selesai</font>
                     </span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="komplaintbaru.html">
-                    <img src="images/Chat_plus.png">
+                    <img src="images/Chat_plus.png" style="opacity: 0.5;">
                     <span>
                         <font color="#8FA0B9">Komplain Baru</font>
                     </span></a>
@@ -170,7 +170,7 @@ div.dt-buttons {
     margin: 1em 0; padding: 0;" class="sidebar-divider my-0">
             <li class="nav-item">
                 <a class="nav-link" href="index.html">
-                    <img src="img/settings-4-line.png">
+                    <img src="img/settings-4-line.png" style="opacity: 0.5;">
                     <span>
                         <font color="#8FA0B9">Settings</font>
                     </span></a>
@@ -306,14 +306,21 @@ div.dt-buttons {
                     <div class="card shadow mb-4">
                         <div class="card-body">
                             <div class="table-responsive">
-                                <div style="position:absolute;left:70%;z-index:15;">
+                                <div style="position:absolute;left:55%;z-index:15;">
                                     <label for="cars">Filter:</label>
                                     <select name="cars" id="cars">
-                                          <option selected="true" disabled="disabled">Tentang</option>
-                                            <option>Transfer Pospay</option>
-                                            <option>Upgrade Rekening</option>
-                                            <option>Transfer</option>
-                                            <option>Billing</option>
+                                        <option selected="true" disabled="disabled">Tentang</option>
+                                        <option>Transfer Pospay</option>
+                                        <option>Upgrade Rekening</option>
+                                        <option>Transfer</option>
+                                        <option>Billing</option>
+                                    </select>
+                                    <label for="cars">Export:</label>
+                                    <select name="cars" id="cars">
+                                        <option selected="true" disabled="disabled">Download</option>
+                                        <option>Word</option>
+                                        <option>PDF</option>
+                                        <option>Exel</option>
                                     </select>
                                 </div>
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">

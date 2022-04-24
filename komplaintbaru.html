@@ -117,42 +117,42 @@ div.dt-buttons {
             <li class="nav-item">
                 <a class="nav-link" href="dahsboard.html">
                     <!-- <i class="fa fa-square" style="padding-left: 0px;padding-right: 0px;"></i> -->
-                    <img src="img/function-line.png">
+                    <img src="img/function-line.png" style="opacity: 0.5;">
                     <span>
                         <font color="#8FA0B9">Dashboard</font>
                     </span></a>
             </li>
             <li class="nav-item"  >
                 <a class="nav-link" href="semua.html">
-                    <img src="images/user-received-2-line.png">
+                    <img src="images/user-received-2-line.png" style="opacity: 0.5;">
                     <span>
                         <font color="#8FA0B9">Semua</font>
                     </span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="selesai.html">
-                    <img src="img/checkbox-circle-line.png">
+                    <img src="img/checkbox-circle-line.png" style="opacity: 0.5;">
                     <span>
                         <font color="#8FA0B9">Selesai</font>
                     </span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="hariini.html">
-                    <img src="images/refresh-line.png">
+                    <img src="images/refresh-line.png" style="opacity: 0.5;">
                     <span>
                         <font color="#8FA0B9">Hari ini</font>
                     </span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="tidakselesai.html">
-                    <img src="images/file-list-3-line.png">
+                    <img src="images/file-list-3-line.png" style="opacity: 0.5;">
                     <span>
                         <font color="#8FA0B9">Tidak Selesai</font>
                     </span></a>
             </li>
             <li class="nav-item active" style=" display: grid;align-items: center;background-color: #F5F7FB;color: #F5F7FB; border-top-left-radius: 30px;border-bottom-left-radius: 30px;">
                 <a class="nav-link" href="komplaintbaru.html">
-                    <img src="images/Chat_plus.png">
+                    <img src="images/remix-icons/Chat_plus.png">
                     <span>
                         <font color="blue">Komplain Baru</font>
                     </span></a>
@@ -170,7 +170,7 @@ div.dt-buttons {
     margin: 1em 0; padding: 0;" class="sidebar-divider my-0">
             <li class="nav-item">
                 <a class="nav-link" href="index.html">
-                    <img src="img/settings-4-line.png">
+                    <img src="img/settings-4-line.png" style="opacity: 0.5;">
                     <span>
                         <font color="#8FA0B9">Settings</font>
                     </span></a>
@@ -306,14 +306,21 @@ div.dt-buttons {
                     <div class="card shadow mb-4">
                         <div class="card-body">
                             <div class="table-responsive">
-                                <div style="position:absolute;left:70%;z-index:15;">
+                                <div style="position:absolute;left:55%;z-index:15;">
                                     <label for="cars">Filter:</label>
                                     <select name="cars" id="cars">
-                                          <option selected="true" disabled="disabled">Tentang</option>
-                                            <option>Transfer Pospay</option>
-                                            <option>Upgrade Rekening</option>
-                                            <option>Transfer</option>
-                                            <option>Billing</option>
+                                        <option selected="true" disabled="disabled">Tentang</option>
+                                        <option>Transfer Pospay</option>
+                                        <option>Upgrade Rekening</option>
+                                        <option>Transfer</option>
+                                        <option>Billing</option>
+                                    </select>
+                                    <label for="cars">Export:</label>
+                                    <select name="cars" id="cars">
+                                        <option selected="true" disabled="disabled">Download</option>
+                                        <option>Word</option>
+                                        <option>PDF</option>
+                                        <option>Exel</option>
                                     </select>
                                 </div>
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -335,7 +342,7 @@ div.dt-buttons {
                                             <td>19/04/2022 07:15</td>
                                             <td>19/04/2022 11:15</td>
                                             <td>Transfer Pospay</td>
-                                            <td style="text-align: center;"><img src="images/btn4.png" height="35"></td>
+                                            <td><font color="red">High Priority</font></td>
                                             <td><a href=""><u>Detail</u></a></td>
                                         </tr>
                                         <tr>
@@ -344,7 +351,7 @@ div.dt-buttons {
                                             <td>18/04/2022 07:15</td>
                                             <td>18/04/2022 11:15</td>
                                             <td>Transfer Pospay</td>
-                                            <td style="text-align: center;"><img src="images/btn4.png" height="35"></td>
+                                            <td><font color="red">High Priority</font></td>
                                             <td><a href=""><u>Detail</u></a></td>
                                         </tr>
                                         <tr>
@@ -353,7 +360,7 @@ div.dt-buttons {
                                             <td>17/04/2022 07:15</td>
                                             <td>17/04/2022 11:15</td>
                                             <td>Pembelian Pulsa</td>
-                                            <td style="text-align: center;"><img src="images/btn4.png" height="35"></td>
+                                            <td><font color="red">High Priority</font></td>
                                             <td><a href=""><u>Detail</u></a></td>
                                         </tr>
                                         <tr>
@@ -362,7 +369,7 @@ div.dt-buttons {
                                             <td>16/04/2022 07:15</td>
                                             <td>16/04/2022 11:15</td>
                                             <td>Transfer Pospay</td>
-                                            <td style="text-align: center;"><img src="images/btn4.png" height="35"></td>
+                                            <td><font color="red">High Priority</font></td>
                                             <td><a href=""><u>Detail</u></a></td>
                                         </tr>
                                         <tr>
@@ -371,7 +378,7 @@ div.dt-buttons {
                                             <td>15/04/2022 07:15</td>
                                             <td>15/04/2022 11:15</td>
                                             <td>Pembelian Pulsa</td>
-                                            <td style="text-align: center;"><img src="images/btn4.png" height="35"></td>
+                                            <td><font color="red">High Priority</font></td>
                                             <td><a href=""><u>Detail</u></a></td>
                                         </tr>
                                         <tr>
@@ -380,7 +387,7 @@ div.dt-buttons {
                                             <td>14/04/2022 07:15</td>
                                             <td>14/04/2022 11:15</td>
                                             <td>Transfer Pospay</td>
-                                            <td style="text-align: center;"><img src="images/btn3.png" height="35"></td>
+                                            <td><font color="yellow">Mid Priority</font></td>
                                             <td><a href=""><u>Detail</u></a></td>
                                         </tr>
                                         <tr>
@@ -389,7 +396,7 @@ div.dt-buttons {
                                             <td>13/04/2022 07:15</td>
                                             <td>13/04/2022 11:15</td>
                                             <td>Pembelian Pulsa </td>
-                                            <td style="text-align: center;"><img src="images/btn3.png" height="35"></td>
+                                            <td><font color="yellow">Mid Priority</font></td>
                                             <td><a href=""><u>Detail</u></a></td>
                                         </tr>
                                         <tr>
@@ -398,7 +405,7 @@ div.dt-buttons {
                                             <td>13/04/2022 07:15</td>
                                             <td>13/04/2022 11:15</td>
                                             <td>Transfer Pospay</td>
-                                            <td style="text-align: center;"><img src="images/btn5.png" height="35"></td>
+                                            <td><font color="blue">Low Priority</font></td>
                                             <td><a href=""><u>Detail</u></a></td>
                                         </tr>
                                         <tr>
@@ -407,7 +414,7 @@ div.dt-buttons {
                                             <td>12/04/2022 07:15</td>
                                             <td>12/04/2022 11:15</td>
                                             <td>Pembelian Pulsa</td>
-                                            <td style="text-align: center;"><img src="images/btn5.png" height="35"></td>
+                                            <td><font color="blue">Low Priority</font></td>
                                             <td><a href=""><u>Detail</u></a></td>
                                         </tr>
                                         <tr>
@@ -416,7 +423,7 @@ div.dt-buttons {
                                             <td>11/04/2022 07:15</td>
                                             <td>11/04/2022 11:15</td>
                                             <td>Transfer Pospay</td>
-                                            <td style="text-align: center;"><img src="images/btn5.png" height="35"></td>
+                                            <td><font color="blue">Low Priority</font></td>
                                             <td><a href=""><u>Detail</u></a></td>
                                         </tr>
                                         
@@ -474,17 +481,17 @@ div.dt-buttons {
                                 <div class="row">
                                     <div class="col">
                                         <label for="recipient-name" class="col-form-label">Nama</label>
-                                        <input type="text" class="form-control" id="recipient-name" placeholder="Nama costumer">
+                                        <input type="text" class="form-control" id="recipient-name" placeholder="Nama customer">
                                     </div>
                                     <div class="col">
                                         <label for="recipient-name" class="col-form-label">Email</label>
-                                        <input type="text" class="form-control" id="recipient-name" placeholder="Email costumer">
+                                        <input type="text" class="form-control" id="recipient-name" placeholder="Email customer">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col">
                                         <label for="recipient-name" class="col-form-label">No.Phone</label>
-                                        <input type="text" class="form-control" id="recipient-name" placeholder="Phone costumer">
+                                        <input type="text" class="form-control" id="recipient-name" placeholder="Phone customer">
                                     </div>
                                     <div class="col">
                                     </div>
@@ -504,7 +511,7 @@ div.dt-buttons {
                                     </div>
                                     <div class="col">
                                         <label for="recipient-name" class="col-form-label">Bagian Kendala</label>
-                                        <!-- <input type="text" class="form-control" id="recipient-name" placeholder="Email costumer"> -->
+                                        <!-- <input type="text" class="form-control" id="recipient-name" placeholder="Email customer"> -->
                                         <select class="form-control">
                                             <option selected="true" disabled="disabled">Pilih Kendala</option>
                                             <option>Akun & Pengaturan</option>
