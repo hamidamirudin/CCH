@@ -114,7 +114,7 @@ div.dt-buttons {
             <!-- Divider -->
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active" style=" display: grid;align-items: center;background-color: #F5F7FB;color: #F5F7FB; border-top-left-radius: 30px;border-bottom-left-radius: 30px;">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="dahsboard.html">
                     <!-- <i class="fa fa-square" style="padding-left: 0px;padding-right: 0px;"></i> -->
                     <img src="img/function-line.png">
                     <span>
@@ -122,47 +122,47 @@ div.dt-buttons {
                     </span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="semua.html">
                     <img src="images/user-received-2-line.png">
                     <span>
                         <font color="#8FA0B9">Semua</font>
                     </span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="selesai.html">
                     <img src="img/checkbox-circle-line.png">
                     <span>
                         <font color="#8FA0B9">Selesai</font>
                     </span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="hariini.html">
                     <img src="images/refresh-line.png">
                     <span>
                         <font color="#8FA0B9">Hari ini</font>
                     </span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="tidakselesai.html">
                     <img src="images/file-list-3-line.png">
                     <span>
                         <font color="#8FA0B9">Tidak Selesai</font>
                     </span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="komplaintbaru.html">
                     <img src="images/Chat_plus.png">
                     <span>
                         <font color="#8FA0B9">Komplain Baru</font>
                     </span></a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="index.html">
                     <img src="images/Book.png">
                     <span>
                         <font color="#8FA0B9">Complaint Priorty</font>
                     </span></a>
-            </li>
+            </li> -->
             <!-- Divider -->
             <hr style="display: block; height: 1px;
     border: 0; border-top: 1px solid #ccc;
@@ -309,7 +309,7 @@ div.dt-buttons {
                 <div class="container-fluid">
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h5 mb-0 text-gray-800">CCHA! Activity POSPAY PT. Pos Indonesia</h1>
+                        <h6 class="m-0 font-weight-bold text-primary">CCHA! Activity POSPAY PT. Pos Indonesia</h6>
                     </div>
                     <!-- Content Row -->
                     <div class="row">
@@ -343,7 +343,7 @@ div.dt-buttons {
                                             <div class="text-xs font-weight-bold  text-uppercase mb-1">
                                                 <font size="1"><b>Complaint Selesai</b></font>
                                             </div>
-                                            <div class="h5 mb-0 font-weight-bold ">24</div>
+                                            <div class="h5 mb-0 font-weight-bold ">37</div>
                                             <div class="text-xs font-weight-bold  text-uppercase mb-1">
                                                 <font size="1">Tiket Complaint</font>
                                             </div>
@@ -389,7 +389,7 @@ div.dt-buttons {
                                             <div class="text-xs font-weight-bold  text-uppercase mb-1">
                                                 <font size="1"><b>Complaint Tidak Selesai</b></font>
                                             </div>
-                                            <div class="h5 mb-0 font-weight-bold ">3</div>
+                                            <div class="h5 mb-0 font-weight-bold ">7</div>
                                             <div class="text-xs font-weight-bold  text-uppercase mb-1">
                                                 <font size="1">Tiket Complaint</font>
                                             </div>
@@ -409,7 +409,7 @@ div.dt-buttons {
                             <div class="card shadow mb-4">
                                 <!-- Card Header - Dropdown -->
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between" style="padding-left: 6px">
-                                    <h6 class="m-0 font-weight-bold text-primary">New Complaint</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Komplain Baru</h6>
                                 </div>
                                 <!-- Card Body -->
                                 <div class="card-body" style="height: 400px;overflow-y: scroll;">
@@ -504,7 +504,7 @@ div.dt-buttons {
                 <br>
                 <div class="row">
                     <div style="padding-left: 0px;" class="col-8"><i class="far fa-circle fa-xs" style="color: yellow"> </i>
-                        <font size="2" color="yellow"> Mid Priorty</font>
+                        <font size="2" color="khaki"> Mid Priorty</font>
                     </div>
                     <div class="col-4">130</div>
                 </div>
@@ -828,7 +828,7 @@ div.dt-buttons {
                                         <font size="2">
                                          <div class="row">
                                                 <div class="col-12">
-                                                  <font size="2" color="red"> <b>High Priorty</b></font> &nbsp Sebelum 11:15:12
+                                                  <font size="2" color="red"> <b>High Priorty</b></font> &nbsp|&nbsp <font color="red">Belum di Respond</font> 
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -855,7 +855,8 @@ div.dt-buttons {
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <center><button type="button" class="btn btn-primary" data-dismiss="modal" onClick='responcomplain()'>Respond Komplain</button></center>
+                    <span class="form-control-static mr-auto"><b>Batas Respond:19/04/2022 11:15</b></span>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onClick='responcomplain()'>Respond Komplain</button>
                 </div>
             </div>
         </div>
