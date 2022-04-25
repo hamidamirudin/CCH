@@ -96,6 +96,7 @@ div.dt-buttons {
         height: 50px;
         background-color: blue;
     }
+
     </style>
 </head>
 
@@ -250,7 +251,7 @@ div.dt-buttons {
                                     </div>
                                     <div class="font-weight-bold">
                                         <div class="text-truncate">Rizal Anandi has create Complaint</div>
-                                        <div class="middle">"Transfer tidak bisa dilakukan, kode PIN salah.Padahal itu benar,saya coba ganti di setting dan bisa,tapi transfer tidak bisa"</div>
+                                        <div class="middle">"Saya melakukan Transfer antar Pospay mendapatkan notifikasi Transfer Berhasil, dan memotong Saldo Pospay saya, namun tidak masuk dananya ke penerima"</div>
                                         <div class="small text-gray-500">Today at 09:42 AM <div class="card bg-gradient-danger text-white">
                                                 <center>High</center>
                                             </div>
@@ -374,7 +375,7 @@ div.dt-buttons {
                                             </div>
                                         </div>
                                         <div class="col-auto">
-                                            <img src="images/Vector.png">
+                                            <img src="images/vector.png">
                                         </div>
                                     </div>
                                 </div>
@@ -426,10 +427,11 @@ div.dt-buttons {
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
+                                                    <tr data-toggle="modal" data-target="#myModal1">
                                                         <td>S000083</td>
                                                         <td>Rizal Anandi</td>
-                                                        <td style="vertical-align: middle;"><a href='#myModal1' data-toggle='modal'> <img src="images/btn.png"></a></td>
+                                                       <!--  <td style="vertical-align: middle;"><a href='#myModal1' data-toggle='modal'> <img src="images/btn.png"></a></td> -->
+                                                        <td style="vertical-align: middle;"><img src="images/btn.png"></td>
                                                         <td>22/08/2022</td>
                                                         <td>Pulsa</td>
                                                     </tr>
@@ -443,7 +445,7 @@ div.dt-buttons {
                                                     <tr>
                                                         <td>S000013</td>
                                                         <td>Riska Aliansah</td>
-                                                        <td style="vertical-align: middle;"><img src="images/btn2.png">
+                                                        <td style="vertical-align: middle;"><img src="images/btn6.png">
                                         </div>
                                         </td>
                                         <td>22/08/2022</td>
@@ -452,7 +454,7 @@ div.dt-buttons {
                                         <tr>
                                             <td>S000023</td>
                                             <td>Reza Akbar</td>
-                                            <td style="vertical-align: middle;"><img src="images/btn.png"></td>
+                                            <td style="vertical-align: middle;"><img src="images/btn7.png"></td>
                                             <td>22/08/2022</td>
                                             <td>PLN</td>
                                         </tr>
@@ -496,32 +498,32 @@ div.dt-buttons {
                 </div>
                 </font>
                 <div class="row">
-                    <div style="padding-left: 0px;" class="col-8"><i class="far fa-circle fa-xs" style="color: red"> </i>
-                        <font size="2" color="red"> High Priorty</font>
+                    <div style="padding-left: 0px;padding-right: 0px" class="col-10"><i class="far fa-circle fa-xs" style="color: red"> </i>
+                        <font style="color: red;font-size: 0.800em"> High Priorty</font>
                     </div>
-                    <div class="col-4">130</div>
+                    <div style="padding-left: 0px;padding-right: 0px" class="col-2"><font size="1"><b>130</b></font></div>
                 </div>
                 <br>
                 <div class="row">
-                    <div style="padding-left: 0px;" class="col-8"><i class="far fa-circle fa-xs" style="color: yellow"> </i>
-                        <font size="2" color="yellow"> Mid Priorty</font>
+                    <div style="padding-left: 0px;padding-right: 0px" class="col-10"><i class="far fa-circle fa-xs" style="color: #FF9901"> </i>
+                        <font style="color: #FF9901;font-size: 0.900em">Moderate Priority</font>
                     </div>
-                    <div class="col-4">130</div>
+                    <div style="padding-left: 0px;padding-right: 0px" class="col-2"><font size="1"><b>130</b></font></div>
                 </div>
                 <br>
                 <div class="row">
-                    <div style="padding-left: 0px;" class="col-8"><i class="far fa-circle fa-xs" style="color: blue"> </i>
-                        <font size="2" color="blue"> Low Priorty</font>
+                    <div style="padding-left: 0px;padding-right: 0px" class="col-10"><i class="far fa-circle fa-xs" style="color: blue"> </i>
+                        <font style="color: blue;font-size: 0.900em;padding-left: 0px;padding-right: 0px" class="col-2"> Normal Priorty</font>
                     </div>
-                    <div class="col-4">130</div>
+                    <div style="padding-left: 0px;padding-right: 0px" class="col-2"><font size="1"><b>130</b></font></div>
                 </div>
                 <br>
-                <div class="row">
-                    <div style="padding-left: 0px;" class="col-8"><i class="far fa-circle fa-xs" style="color: grey"> </i>
-                        <font size="2" color="grey"> Spesial Case</font>
+                <!-- <div class="row">
+                    <div style="padding-left: 0px;padding-right: 0px" class="col-10"><i class="far fa-circle fa-xs" style="color: grey"> </i>
+                        <font style="color: grey;font-size: 0.900em;padding-left: 0px;padding-right: 0px"> Spesial Case</font>
                     </div>
-                    <div class="col-4">130</div>
-                </div>
+                    <div style="padding-left: 0px;padding-right: 0px" class="col-2"><font size="1"><b>130</b></font></div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -672,17 +674,17 @@ div.dt-buttons {
                                 <div class="row">
                                     <div class="col">
                                         <label for="recipient-name" class="col-form-label">Nama</label>
-                                        <input type="text" class="form-control" id="recipient-name" placeholder="Nama costumer">
+                                        <input type="text" class="form-control" id="recipient-name" placeholder="Nama Customer">
                                     </div>
                                     <div class="col">
                                         <label for="recipient-name" class="col-form-label">Email</label>
-                                        <input type="text" class="form-control" id="recipient-name" placeholder="Email costumer">
+                                        <input type="text" class="form-control" id="recipient-name" placeholder="Email Customer">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col">
                                         <label for="recipient-name" class="col-form-label">No.Phone</label>
-                                        <input type="text" class="form-control" id="recipient-name" placeholder="Phone costumer">
+                                        <input type="text" class="form-control" id="recipient-name" placeholder="Phone Customer">
                                     </div>
                                     <div class="col">
                                     </div>
@@ -924,8 +926,29 @@ div.dt-buttons {
     }
     //swal("Our First Alert", "With some body text and success icon!", "success");
     function responcomplain() {
-        //   alert('dsdsa');
+        // alert('dsdsa');
         //swal("Berhasil!", "Komplain baru berhasil ditambahkan", "success");
+        swal({
+  title: 'Apakah Anda Yakin Akan Merespond Tiket S0000083?',
+  text: "",
+  type: 'warning',
+  showCancelButton: true,
+  confirmButtonColor: '#d33',
+  cancelButtonColor: '#0140D4',
+  confirmButtonText: 'Ya, Respond!',
+  confirmButtonText: "TIDAK",
+  cancelButtonText: "YA"
+}).then(function (isConfirm) {
+     if (isConfirm)
+                {
+                      swal('Berhasil','Tiket S0000083 Berhasil Direspond.','success');
+                }
+                else
+                {
+                    //swal('Berhasil','Tiket S0000083 Berhasil Direspond.','success');
+                }
+
+})
     }
     </script>
     <script type="text/javascript">
